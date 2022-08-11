@@ -1,0 +1,510 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/* -------------------------navbar-------------------------------------- */
+/*  navbar boostrap */
+.bg-nav{
+    background-color: #21283f;
+}
+/*  -------------------------Estilos Inicio------------------------------- */
+.contenedor{
+    display: grid;
+    background-color: #21283f;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "menu menu"
+    "contenido img";
+    justify-content: center;
+    align-items: center;
+}
+/* Header */
+.menu{
+    grid-area: menu;
+}
+.portada{
+    
+    grid-area: contenido;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-self: center;
+    color: #f2f1f1;
+}
+.portada div{
+    padding-top: 1.5rem;
+    grid-auto-flow: 5rem;
+}
+.portada__boton1{
+    height: 3.5rem;
+    width: 10rem;
+    margin-right: 1rem;
+    border-radius: 5rem;
+    text-decoration: none;
+    background-color: #de3f3f;
+    border: none;
+}
+.portada__boton1 a{
+    text-decoration: none;
+    color: #f2f1f1;
+    font-size: 1.1rem;
+}
+.portada__boton2{
+    height: 3.5rem;
+    width: 10rem;
+    margin-left: 1rem;
+    border-radius: 5rem;
+    border: #f2f1f1 3px solid;
+    background-color: #21283f;
+}
+.portada__boton2 a{
+    text-decoration: none;
+    color: #f2f1f1;
+    font-size: 1.1rem;
+}
+/* Imagen de la portada */
+.imagen{
+    grid-area: img;
+}
+.imagen img{
+    width:100%;
+}
+/* Sección secundaria página Inicio */
+.proceso   {
+    display: flex;
+    height: 350px;
+    justify-content:space-evenly;
+    align-items:center;
+    text-align: center;
+}
+.proceso img{
+    width: 50px;
+}
+.proceso h3{
+    font-size: 16px;
+}
+.proceso p{
+    font-size: 14px;
+    width: 200px;
+}
+.boton{
+    display:flex;
+    justify-content: center;
+    margin-bottom: 4rem;
+}
+.boton button{
+    height: 3rem;
+    width: 10rem;
+    background-color:#de3f3f;
+    border-radius: 1.5rem;
+    color: #f2f1f1;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+.boton button a{
+    text-decoration: none;
+    color: #d9d9d9;
+    font-size: 1.2rem;
+}
+/* -------------------------Estilos sección Cotiza---------------------------- */
+.contenedor2{
+    display: grid;
+    background-color: #f2f1f1;
+    grid-template-columns: 1.6fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "menu menu"
+    "seleccion cubo";
+    justify-content: center;
+    align-items: center;
+}
+/* Secciíon de información */
+.seleccion{
+    padding-top: 100px;
+    grid-area: seleccion;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-self: center;
+    gap: 2rem;
+    margin-top: 4rem;
+}
+.seleccion div{
+    display: flex;
+    flex-direction: column;
+    padding-top: 1.5rem;
+    grid-auto-flow: 5rem;
+    gap: 1rem;
+}
+.seleccion__boton1{
+    height: 4rem;
+    width: 90%;
+    margin-left: 1rem;
+    border: #f2f1f1 3px solid;
+    background-color: #cecece;
+}
+.seleccion__boton1 a{
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+}
+.seleccion__boton2{
+    height: 4rem;
+    width: 90%;
+    margin-left: 1rem;
+    border: #f2f1f1 3px solid;
+    background-color: #cecece;
+}
+.seleccion__boton2 a{
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+}
+.seleccion__boton3{
+    height: 4rem;
+    width: 90%;
+    margin-left: 1rem;
+    border: #f2f1f1 3px solid;
+    background-color: #cecece;
+}
+.seleccion__boton3 a{
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+}
+.seleccion h1{
+    font-size: 1.8rem;
+}
+.seleccion p{
+    width: 70%;
+    align-self: center;
+    border-top: #de3f3f 3.5px solid;
+    padding-top: 1rem;
+}
+/* Banner lateral */
+.banner{
+    grid-area: cubo;
+    height: 100%;
+    background-color: #d9d9d9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 5rem;
+}
+.banner p{
+    padding: 0rem 2rem;
+}
+.banner img{
+    width: 40%;
+}
+.banner__boton{
+    padding: 10px 35px;
+    background-color: #de3f3f;
+    border-radius: 25px;
+    border: none;
+}
+.banner__boton a{
+    text-decoration: none;
+    color: #f2f1f1;
+}
+.pregunta{
+    font-weight: bold;
+}
+
+/*  --------------------------Estilos materiales------------------------------ */
+.material{
+    background-color: #21283f;
+    padding-top: 100px;
+}
+.material__linea1{
+    display: flex;
+    justify-content: center;
+}
+.material__linea1 img{
+    margin: 37px 40px;
+}
+.material__linea2{
+    display: flex;
+    justify-content: center;
+}
+.material__linea2 img{
+    margin: 37px 40px;
+}
+.material div img{
+    width: 250px;
+    height: 250px;
+    border-radius: 175px;
+}
+.material h1{
+    color: #f2f1f1;
+    padding: 0% 18%;
+}
+.material p{
+    color: #f2f1f1;
+    padding: 0% 20% 2% 20%;
+}
+/* ----------------------Estilos sección Servicios---------------------------- */
+.services{
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    background-color: #21283f;
+    padding-bottom: 100px;
+}
+.services h1{
+    color: #f2f1f1;
+    padding: 0% 18%;
+}
+.descripcion{
+    color: #f2f1f1;
+    padding: 0% 20% 2% 20%;
+}
+.services img{
+    width: 100px;
+    margin-top: 1rem;
+}
+.tarjetas{
+    display: flex;
+    margin: 5% 15%;
+    background-color: #f2f1f1;
+    max-width: 800px;
+    align-self: center; 
+}
+.tarjetas div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2%;
+    gap: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+/*  footer */
+footer{
+    background-color: #21283f;
+    text-align: center;
+}
+
+footer h4{
+    color: #f2f1f1;
+    font-size: 11px;
+    padding: 30px;
+}
+/* ----------------------------Estilos nosotros ----------------------------*/
+.nosotros{
+    padding-top: 100px;
+    background-color: #EDEDED;
+    color: black;
+}
+.nosotros div{
+    height: 70vh;
+}
+.nosotros img{
+    margin-left: 10%;
+    height: 50vh;
+    width: fit-content;
+}
+.nosotros h1{
+    text-align: center;
+}
+.nosotros p{
+    margin-top: 5%;
+    text-align: center;
+    height: 90vh;
+    font-size: 1.3rem;
+}
+.container-fluid{
+    background-color: #21283f;
+}
+form{
+    padding: 5%;
+    margin-top: 100px;
+    text-align: center;
+}
+form h2{
+    color: #f2f1f1;
+}
+.enviar{
+    text-align: center;
+}
+.enviar{
+    display: inline-block;
+    margin-left: 46%;
+    margin-bottom: 80px;
+    background-color:#de3f3f;
+    padding: 10px 25px;
+    border-radius: 25px;
+    color: #f2f1f1;
+}
+/* ------------------------mediaqueris del proyecto ------------------------*/
+/*  pantallas medianas */
+@media screen and (max-width:1200px){
+    .contenedor{
+        
+        grid-template-areas: 
+        "menu menu"
+        "contenido contenido";
+    }
+    .imagen{
+        display: none;
+    }
+    .portada{
+        padding-top: 50px;
+        height: 50vh;
+        justify-content: center;
+    }
+    .material{
+        height: auto;
+    }
+    .material div img{
+        width: 150px;
+        height: 150px;
+        border-radius: 75px;
+    }
+    .services{
+        text-align: center;
+    }
+    .descripcion{
+        font-size: 1rem;
+        margin: 2rem 0rem;
+    }
+    .tarjetas{
+        flex-direction: column;
+        gap: 2rem;
+        background-color: #21283f;
+    }
+    .tarjetas div{
+        background-color: #f2f1f1;
+    }
+    .tarjetas img{
+        width: 80px;
+    }
+    .nosotros img{
+        display: none;
+    }
+    .nosotros div p{
+        font-size: 1.4rem;
+        padding: 2%;
+    }
+}
+/*  pantallas pequeñas */
+@media screen and (max-width:780px){
+    .portada{
+        padding-top: 60px;
+    }
+    .portada h1{
+        font-size: 1.5rem;
+    }
+    .portada__boton1{
+        height: 2rem;
+        width: 7rem;
+        margin-right: 1rem;
+        border-radius: 3.5rem;
+        
+    }
+    .portada__boton1 a{
+        font-size: 0.8rem;
+    }
+    .portada__boton2{
+        height: 2rem;
+        width: 7rem;
+        margin-left: 1rem;
+        border-radius: 3.5rem;
+    }
+    .portada__boton2 a{
+        font-size: 0.8rem;
+    }
+    .proceso   {
+        flex-direction: column;
+        height: 550px;
+        justify-content:space-evenly;
+        align-items:center;
+        text-align: center;
+    }
+    .contenedor2{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "menu"
+        "seleccion"
+        "cubo";
+        justify-content: center;
+        align-items: center;
+    }
+    .seleccion h1{
+        font-size: 1.6rem;
+    }
+    .banner{
+        padding: 4rem 0rem;
+    }
+    .material{
+        height: auto;
+    }
+    .material h1{
+        text-align: center;
+    }
+    .material p{
+        text-align: center;
+        margin-top: 1rem;
+    }
+    .material__linea1{
+        flex-direction: column;
+        align-items: center;
+    }
+    .material__linea2{
+        flex-direction: column;
+        align-items: center;
+    }
+    .nosotros div{
+        height: auto;
+        padding-bottom: 30%;
+    }
+}
+/* pantallas de 300 */
+@media screen and (max-width:360px){
+    .portada h1{
+        font-size: 1.2rem;
+    }
+    .portada p{
+        font-size: 0.9rem;
+    }
+    .portada__boton1{
+        height: 2rem;
+        width: 6rem;
+        margin-right: 0.5rem;
+        border-radius: 3.5rem;
+        
+    }
+    .portada__boton1 a{
+        font-size: 0.8rem;
+    }
+    .portada__boton2{
+        height: 2rem;
+        width: 6rem;
+        margin-left: 0.5rem;
+        border-radius: 3.5rem;
+    }
+    .portada__boton2 a{
+        font-size: 0.8rem;
+    }
+    footer h4{
+        font-size: 0.5rem;
+    }
+}
+/* NOTA: La sección Nosotros ha sido maquetada con Boostrap
+
+
+
+
+
